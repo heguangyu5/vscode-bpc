@@ -2,13 +2,13 @@
   "name": "vscode-bpc",
   "displayName": "BPC - Bob PHP Compiler",
   "description": "Compile PHP file(s) into an executable binary.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "bob-php-compiler",
   "engines": {
     "vscode": "^1.99.0"
   },
   "categories": [
-    "Other"
+    "Programming Languages"
   ],
   "activationEvents": [],
   "main": "./extension.js",
