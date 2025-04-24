@@ -114,16 +114,16 @@ function activate(context) {
 	terminal = vscode.window.createTerminal("BPC Terminal");
 
 	context.subscriptions.push(
-		vscode.commands.registerCommand('vscode-bpc.compile-static-mini', function () {
+		vscode.commands.registerCommand('vscode-bpc.compile-static-single', function () {
 			compileMini('static');
 		}),
-		vscode.commands.registerCommand('vscode-bpc.compile-dynamic-mini', function () {
+		vscode.commands.registerCommand('vscode-bpc.compile-dynamic-single', function () {
 			compileMini('dynamic');
 		}),
-		vscode.commands.registerCommand('vscode-bpc.compile-static-configurable', function () {
+		vscode.commands.registerCommand('vscode-bpc.compile-static-multi', function () {
 			compileFull('static');
 		}),
-		vscode.commands.registerCommand('vscode-bpc.compile-dynamic-configurable', function () {
+		vscode.commands.registerCommand('vscode-bpc.compile-dynamic-multi', function () {
 			compileFull('dynamic')
 		})
 	);

@@ -2,7 +2,7 @@
   "name": "vscode-bpc",
   "displayName": "BPC - Bob PHP Compiler",
   "description": "Compile PHP file(s) into an executable binary.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "bob-php-compiler",
   "engines": {
     "vscode": "^1.99.0"
@@ -14,46 +14,46 @@
   "main": "./extension.js",
   "contributes": {
     "commands": [{
-      "command": "vscode-bpc.compile-static-mini",
-      "title": "BPC: Compile static (mini)"
+      "command": "vscode-bpc.compile-static-single",
+      "title": "BPC: Compile static (single)"
     },{
-      "command": "vscode-bpc.compile-dynamic-mini",
-      "title": "BPC: Compile dynamic (mini)"
+      "command": "vscode-bpc.compile-dynamic-single",
+      "title": "BPC: Compile dynamic (single)"
     },{
-      "command": "vscode-bpc.compile-static-configurable",
-      "title": "BPC: Compile static (configurable)"
+      "command": "vscode-bpc.compile-static-multi",
+      "title": "BPC: Compile static (multi)"
     },{
-      "command": "vscode-bpc.compile-dynamic-configurable",
-      "title": "BPC: Compile dynamic (configurable)"
+      "command": "vscode-bpc.compile-dynamic-multi",
+      "title": "BPC: Compile dynamic (multi)"
     }],
     "menus": {
       "commandPalette": [{
-        "command": "vscode-bpc.compile-static-mini",
+        "command": "vscode-bpc.compile-static-single",
         "when": "editorLangId == php"
       },{
-        "command": "vscode-bpc.compile-dynamic-mini",
+        "command": "vscode-bpc.compile-dynamic-single",
         "when": "editorLangId == php"
       },{
-        "command": "vscode-bpc.compile-static-configurable",
+        "command": "vscode-bpc.compile-static-multi",
         "when": "editorLangId == php"
       },{
-        "command": "vscode-bpc.compile-dynamic-configurable",
+        "command": "vscode-bpc.compile-dynamic-multi",
         "when": "editorLangId == php"
       }],
       "editor/context": [{
-        "command": "vscode-bpc.compile-static-mini",
+        "command": "vscode-bpc.compile-static-single",
         "when": "editorLangId == php",
         "group": "2_bpc@1"
       },{
-        "command": "vscode-bpc.compile-dynamic-mini",
+        "command": "vscode-bpc.compile-dynamic-single",
         "when": "editorLangId == php",
         "group": "2_bpc@2"
       },{
-        "command": "vscode-bpc.compile-static-configurable",
+        "command": "vscode-bpc.compile-static-multi",
         "when": "editorLangId == php",
         "group": "3_bpc@1"
       },{
-        "command": "vscode-bpc.compile-dynamic-configurable",
+        "command": "vscode-bpc.compile-dynamic-multi",
         "when": "editorLangId == php",
         "group": "3_bpc@2"
       }]
