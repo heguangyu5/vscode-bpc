@@ -2,7 +2,7 @@
   "name": "vscode-bpc",
   "displayName": "BPC - Bob PHP Compiler",
   "description": "Compile PHP file(s) into an executable binary.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "bob-php-compiler",
   "engines": {
     "vscode": "^1.99.0"
@@ -20,11 +20,11 @@
       "command": "vscode-bpc.compile-dynamic-single",
       "title": "BPC: Compile dynamic (single)"
     },{
-      "command": "vscode-bpc.compile-static-multi",
-      "title": "BPC: Compile static (multi)"
+      "command": "vscode-bpc.compile-static-advanced",
+      "title": "BPC: Compile static (advanced)"
     },{
-      "command": "vscode-bpc.compile-dynamic-multi",
-      "title": "BPC: Compile dynamic (multi)"
+      "command": "vscode-bpc.compile-dynamic-advanced",
+      "title": "BPC: Compile dynamic (advanced)"
     }],
     "menus": {
       "commandPalette": [{
@@ -34,10 +34,10 @@
         "command": "vscode-bpc.compile-dynamic-single",
         "when": "editorLangId == php"
       },{
-        "command": "vscode-bpc.compile-static-multi",
+        "command": "vscode-bpc.compile-static-advanced",
         "when": "editorLangId == php"
       },{
-        "command": "vscode-bpc.compile-dynamic-multi",
+        "command": "vscode-bpc.compile-dynamic-advanced",
         "when": "editorLangId == php"
       }],
       "editor/context": [{
@@ -49,11 +49,11 @@
         "when": "editorLangId == php",
         "group": "2_bpc@2"
       },{
-        "command": "vscode-bpc.compile-static-multi",
+        "command": "vscode-bpc.compile-static-advanced",
         "when": "editorLangId == php",
         "group": "3_bpc@1"
       },{
-        "command": "vscode-bpc.compile-dynamic-multi",
+        "command": "vscode-bpc.compile-dynamic-advanced",
         "when": "editorLangId == php",
         "group": "3_bpc@2"
       }]

@@ -120,10 +120,10 @@ function activate(context) {
 		vscode.commands.registerCommand('vscode-bpc.compile-dynamic-single', function () {
 			compileMini('dynamic');
 		}),
-		vscode.commands.registerCommand('vscode-bpc.compile-static-multi', function () {
+		vscode.commands.registerCommand('vscode-bpc.compile-static-advanced', function () {
 			compileFull('static');
 		}),
-		vscode.commands.registerCommand('vscode-bpc.compile-dynamic-multi', function () {
+		vscode.commands.registerCommand('vscode-bpc.compile-dynamic-advanced', function () {
 			compileFull('dynamic')
 		})
 	);
